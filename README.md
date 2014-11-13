@@ -47,7 +47,7 @@ To locate configuration files with Puli, create a new [`PuliFileLocator`] and
 pass it to your file loaders:
 
 ```php
-use Puli\Symfony\PuliBridge\Config\PuliFileLocator;
+use Puli\Extension\Symfony\Config\PuliFileLocator;
 use Symfony\Component\Routing\Loader\YamlFileLoader;
 
 $loader = new YamlFileLoader(new PuliFileLocator($repo));
@@ -68,9 +68,9 @@ If you want to use the [`PuliFileLocator`] and Symfony's conventional
 [`FileLocatorChain`]:
 
 ```php
-use Puli\Symfony\PuliBridge\Config\PuliFileLocator;
-use Puli\Symfony\PuliBridge\Config\FileLocatorChain;
-use Puli\Symfony\PuliBridge\Config\ChainableFileLocator;
+use Puli\Extension\Symfony\Config\PuliFileLocator;
+use Puli\Extension\Symfony\Config\FileLocatorChain;
+use Puli\Extension\Symfony\Config\ChainableFileLocator;
 use Symfony\Component\Routing\Loader\YamlFileLoader;
 
 $locatorChain = new FileLocatorChain(array(
@@ -94,10 +94,10 @@ Puli also provides a chainable version of the file locator bundled with the
 locator if you want to load configuration files from Symfony bundles:
 
 ```php
-use Puli\Symfony\PuliBridge\Config\PuliFileLocator;
-use Puli\Symfony\PuliBridge\Config\FileLocatorChain;
-use Puli\Symfony\PuliBridge\Config\ChainableFileLocator;
-use Puli\Symfony\PuliBridge\HttpKernel\ChainableKernelFileLocator;
+use Puli\Extension\Symfony\Config\PuliFileLocator;
+use Puli\Extension\Symfony\Config\FileLocatorChain;
+use Puli\Extension\Symfony\Config\ChainableFileLocator;
+use Puli\Extension\Symfony\HttpKernel\ChainableKernelFileLocator;
 
 $locatorChain = new FileLocatorChain(array(
     new PuliFileLocator($repo),

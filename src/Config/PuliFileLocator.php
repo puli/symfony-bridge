@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Puli\Symfony\PuliBridge\Config;
+namespace Puli\Extension\Symfony\Config;
 
 use Puli\Filesystem\Resource\LocalResourceInterface;
 use Puli\Repository\ResourceNotFoundException;

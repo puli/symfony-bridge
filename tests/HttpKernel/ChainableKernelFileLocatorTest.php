@@ -11,7 +11,7 @@
 
 namespace Puli\Tests\Extension\Symfony\HttpKernel;
 
-use Puli\Symfony\PuliBridge\HttpKernel\ChainableKernelFileLocator;
+use Puli\Extension\Symfony\HttpKernel\ChainableKernelFileLocator;
 
 /**
  * @since  1.0

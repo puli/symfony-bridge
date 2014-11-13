@@ -17,8 +17,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Puli\\Symfony\\PuliBridge\\": "src/",
-            "Puli\\Symfony\\PuliBridge\\Tests\\": "tests/"
+            "Puli\\Extension\\Symfony\\": "src/",
+            "Puli\\Extension\\Symfony\\Tests\\": "tests/"
         }
     },
     "extra": {

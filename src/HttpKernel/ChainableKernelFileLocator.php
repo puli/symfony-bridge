@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Puli\Symfony\PuliBridge\HttpKernel;
+namespace Puli\Extension\Symfony\HttpKernel;
 
-use Puli\Symfony\PuliBridge\Config\ChainableFileLocatorInterface;
+use Puli\Extension\Symfony\Config\ChainableFileLocatorInterface;
 use Symfony\Component\HttpKernel\Config\FileLocator;
 
 /**
