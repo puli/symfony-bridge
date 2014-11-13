@@ -9,7 +9,7 @@ Locating Config Files with Puli
 [![Total Downloads](https://poser.pugx.org/puli/symfony-puli-bridge/downloads.png)](https://packagist.org/packages/puli/symfony-puli-bridge)
 [![Dependency Status](https://www.versioneye.com/php/puli:symfony-puli-bridge/1.0.0/badge.png)](https://www.versioneye.com/php/puli:symfony-puli-bridge/1.0.0)
 
-Latest release: [1.0.0-alpha3](https://packagist.org/packages/puli/symfony-puli-bridge#1.0.0-alpha3)
+Latest release: none
 
 PHP >= 5.3.9
 
