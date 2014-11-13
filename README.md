@@ -4,7 +4,7 @@ Locating Config Files with Puli
 [![Build Status](https://travis-ci.org/puli/symfony-puli-bridge.png?branch=master)](https://travis-ci.org/puli/symfony-puli-bridge)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/badges/quality-score.png?s=f1fbf1884aed7f896c18fc237d3eed5823ac85eb)](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/)
 [![Code Coverage](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/badges/coverage.png?s=5d83649f6fc3a9754297da9dc0d997be212c9145)](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/728198dc-dc0f-4bab-b5c0-c0b4e2a55bce/mini.png)](https://insight.sensiolabs.com/projects/728198dc-dc0f-4bab-b5c0-c0b4e2a55bce)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/211008bd-5d7f-4557-bd73-151a5bb79b2c/mini.png)](https://insight.sensiolabs.com/projects/211008bd-5d7f-4557-bd73-151a5bb79b2c)
 [![Latest Stable Version](https://poser.pugx.org/puli/symfony-puli-bridge/v/stable.png)](https://packagist.org/packages/puli/symfony-puli-bridge)
 [![Total Downloads](https://poser.pugx.org/puli/symfony-puli-bridge/downloads.png)](https://packagist.org/packages/puli/symfony-puli-bridge)
 [![Dependency Status](https://www.versioneye.com/php/puli:symfony-puli-bridge/1.0.0/badge.png)](https://www.versioneye.com/php/puli:symfony-puli-bridge/1.0.0)
