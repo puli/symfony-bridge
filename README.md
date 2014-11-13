@@ -159,7 +159,7 @@ reason, [`PuliFileLocator`] does not support relative file paths.
 [Symfony Config component]: http://symfony.com/doc/current/components/config/introduction.html
 [Symfony HttpKernel component]: http://symfony.com/doc/current/components/http_kernel/introduction.html
 [main documentation]: https://github.com/puli/puli/blob/master/README.md
-[`PuliFileLocator`]: : src/Config/PuliFileLocator.php
-[`FileLocatorChain`]: : src/Config/FileLocatorChain.php
-[`ChainableFileLocator`]: : src/Config/ChainableFileLocator.php
-[`ChainableKernelFileLocator`]: : src/HttpKernel/ChainableKernelFileLocator.php
+[`PuliFileLocator`]: src/Config/PuliFileLocator.php
+[`FileLocatorChain`]: src/Config/FileLocatorChain.php
+[`ChainableFileLocator`]: src/Config/ChainableFileLocator.php
+[`ChainableKernelFileLocator`]: src/HttpKernel/ChainableKernelFileLocator.php
