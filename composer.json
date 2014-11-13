@@ -1,0 +1,29 @@
+{
+    "name": "puli/symfony-puli-bridge",
+    "description": "Integrates the Puli library with the Symfony components.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bernhard Schussek",
+            "email": "bschussek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "puli/puli": "~1.0@dev",
+        "symfony/config": "~2.3",
+        "symfony/http-kernel": "~2.3"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Puli\\Symfony\\PuliBridge\\": "src/",
+            "Puli\\Symfony\\PuliBridge\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
