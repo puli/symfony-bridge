@@ -17,7 +17,11 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Puli\\Extension\\Symfony\\": "src/",
+            "Puli\\Extension\\Symfony\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "Puli\\Extension\\Symfony\\Tests\\": "tests/"
         }
     },
