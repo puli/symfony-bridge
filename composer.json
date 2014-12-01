@@ -22,7 +22,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Puli\\Extension\\Symfony\\Tests\\": "tests/"
+            "Puli\\Extension\\Symfony\\Tests\\": "tests/",
+            "Puli\\Tests\\": "vendor/puli/puli/tests/"
         }
     },
     "extra": {
