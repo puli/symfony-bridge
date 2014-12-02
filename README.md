@@ -22,6 +22,12 @@ _acme_demo:
     resource: /acme/demo-bundle/config/routing.yml
 ```
 
+Authors
+-------
+
+* [Bernhard Schussek] a.k.a. [@webmozart]
+* [The Community Contributors]
+
 Installation/Documentation
 --------------------------
 
@@ -47,6 +53,8 @@ License
 
 All contents of this package are licensed under the [MIT license].
 
+[Bernhard Schussek]: http://webmozarts.com
+[The Community Contributors]: https://github.com/puli/symfony-puli-bridge/graphs/contributors
 [Symfony Config component]: http://symfony.com/doc/current/components/config/introduction.html
 [Puli]: https://github.com/puli/puli
 [Locating Config Files with Puli]: http://puli.readthedocs.org/en/latest/extensions/symfony-config.html
