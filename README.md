@@ -22,6 +22,8 @@ _acme_demo:
     resource: /acme/demo-bundle/config/routing.yml
 ```
 
+Read [Puli at a Glance] if you want to learn more about Puli.
+
 Authors
 -------
 
@@ -58,6 +60,7 @@ All contents of this package are licensed under the [MIT license].
 [Symfony Config component]: http://symfony.com/doc/current/components/config/introduction.html
 [Puli]: https://github.com/puli/puli
 [Locating Config Files with Puli]: http://puli.readthedocs.org/en/latest/extensions/symfony-config.html
+[Puli at a Glance]: http://puli.readthedocs.org/en/latest/at-a-glance.html
 [issue tracker]: https://github.com/puli/puli/issues
 [Git repository]: https://github.com/puli/symfony-puli-bridge
 [@webmozart]: https://twitter.com/webmozart
