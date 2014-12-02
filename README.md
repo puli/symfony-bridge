@@ -2,8 +2,7 @@ Puli Bridge for the Symfony Components
 ======================================
 
 [![Build Status](https://travis-ci.org/puli/symfony-puli-bridge.png?branch=master)](https://travis-ci.org/puli/symfony-puli-bridge)
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/badges/quality-score.png?s=f1fbf1884aed7f896c18fc237d3eed5823ac85eb)](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/)
-[![Code Coverage](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/badges/coverage.png?s=5d83649f6fc3a9754297da9dc0d997be212c9145)](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/puli/symfony-puli-bridge/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/211008bd-5d7f-4557-bd73-151a5bb79b2c/mini.png)](https://insight.sensiolabs.com/projects/211008bd-5d7f-4557-bd73-151a5bb79b2c)
 [![Latest Stable Version](https://poser.pugx.org/puli/symfony-puli-bridge/v/stable.png)](https://packagist.org/packages/puli/symfony-puli-bridge)
 [![Total Downloads](https://poser.pugx.org/puli/symfony-puli-bridge/downloads.png)](https://packagist.org/packages/puli/symfony-puli-bridge)
@@ -46,7 +45,7 @@ If you are having problems, send a mail to bschussek@gmail.com or shout out to
 License
 -------
 
-Puli and its documentation are licensed under the [MIT license].
+All contents of this package are licensed under the [MIT license].
 
 [Symfony Config component]: http://symfony.com/doc/current/components/config/introduction.html
 [Puli]: https://github.com/puli/puli
