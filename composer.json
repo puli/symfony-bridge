@@ -1,5 +1,5 @@
 {
-    "name": "puli/symfony-puli-bridge",
+    "name": "puli/symfony-bridge",
     "description": "Integrates the Puli library with the Symfony components.",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.3.9",
-        "puli/puli": "~1.0@dev",
+        "puli/repository": "~1.0@dev",
         "symfony/config": "~2.3",
         "symfony/http-kernel": "~2.3"
     },
