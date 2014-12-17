@@ -11,6 +11,7 @@
 
 namespace Puli\Extension\Symfony\Config;
 
+use InvalidArgumentException;
 use Symfony\Component\Config\FileLocatorInterface;
 
 /**
@@ -45,7 +46,7 @@ class FileLocatorChain implements FileLocatorInterface
      *
      * @return string|array The full path to the file|An array of file paths
      *
-     * @throws \InvalidArgumentException When file is not found
+     * @throws InvalidArgumentException When file is not found
      */
     public function locate($name, $currentPath = null, $first = true)
     {
@@ -55,7 +56,7 @@ class FileLocatorChain implements FileLocatorInterface
             }
         }
 
-        throw new \InvalidArgumentException(sprintf(
+        throw new InvalidArgumentException(sprintf(
             'The file "%s" could not be found.',
             $name
         ));

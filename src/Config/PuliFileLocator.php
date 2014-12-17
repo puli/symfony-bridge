@@ -11,9 +11,11 @@
 
 namespace Puli\Extension\Symfony\Config;
 
+use InvalidArgumentException;
 use Puli\Repository\Filesystem\Resource\LocalResource;
 use Puli\Repository\ResourceNotFoundException;
 use Puli\Repository\ResourceRepository;
+use RuntimeException;
 
 /**
  * @since  1.0
@@ -46,7 +48,7 @@ class PuliFileLocator implements ChainableFileLocator
      *
      * @return string|array The full path to the file|An array of file paths
      *
-     * @throws \InvalidArgumentException When the path is not found
+     * @throws InvalidArgumentException When the path is not found
      */
     public function locate($path, $currentPath = null, $first = true)
     {
@@ -56,7 +58,7 @@ class PuliFileLocator implements ChainableFileLocator
         }
 
         if (null !== $currentPath && file_exists($currentPath.'/'.$path)) {
-            throw new \RuntimeException(sprintf(
+            throw new RuntimeException(sprintf(
                 'You tried to load the file "%s" using a relative path. '.
                 'This functionality is not supported due to a limitation in '.
                 'Symfony, because then this file cannot be overridden anymore. '.
@@ -69,7 +71,7 @@ class PuliFileLocator implements ChainableFileLocator
             $resource = $this->repo->get($path);
 
             if (!$resource instanceof LocalResource) {
-                throw new \InvalidArgumentException(sprintf(
+                throw new InvalidArgumentException(sprintf(
                     'The file "%s" is not a local file.',
                     $path
                 ));
@@ -79,7 +81,7 @@ class PuliFileLocator implements ChainableFileLocator
                 ? $resource->getLocalPath()
                 : array_reverse($resource->getAllLocalPaths());
         } catch (ResourceNotFoundException $e) {
-            throw new \InvalidArgumentException(sprintf(
+            throw new InvalidArgumentException(sprintf(
                 'The file "%s" could not be found.',
                 $path
             ), 0, $e);
