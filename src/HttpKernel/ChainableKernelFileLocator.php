@@ -11,14 +11,14 @@
 
 namespace Puli\Extension\Symfony\HttpKernel;
 
-use Puli\Extension\Symfony\Config\ChainableFileLocatorInterface;
+use Puli\Extension\Symfony\Config\ChainableFileLocator;
 use Symfony\Component\HttpKernel\Config\FileLocator;
 
 /**
  * @since  1.0
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
-class ChainableKernelFileLocator extends FileLocator implements ChainableFileLocatorInterface
+class ChainableKernelFileLocator extends FileLocator implements ChainableFileLocator
 {
     public function supports($path)
     {

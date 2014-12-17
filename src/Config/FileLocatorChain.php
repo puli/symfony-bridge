@@ -20,7 +20,7 @@ use Symfony\Component\Config\FileLocatorInterface;
 class FileLocatorChain implements FileLocatorInterface
 {
     /**
-     * @var ChainableFileLocatorInterface[]
+     * @var ChainableFileLocator[]
      */
     private $locators = array();
 
@@ -31,7 +31,7 @@ class FileLocatorChain implements FileLocatorInterface
         }
     }
 
-    public function addLocator(ChainableFileLocatorInterface $locator)
+    public function addLocator(ChainableFileLocator $locator)
     {
         $this->locators[] = $locator;
     }

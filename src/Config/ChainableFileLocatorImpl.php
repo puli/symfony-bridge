@@ -11,13 +11,16 @@
 
 namespace Puli\Extension\Symfony\Config;
 
-use Symfony\Component\Config\FileLocatorInterface;
+use Symfony\Component\Config\FileLocator;
 
 /**
  * @since  1.0
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
-interface ChainableFileLocatorInterface extends FileLocatorInterface
+class ChainableFileLocatorImpl extends FileLocator implements ChainableFileLocator
 {
-    public function supports($path);
+    public function supports($path)
+    {
+        return true;
+    }
 }
