@@ -11,9 +11,9 @@
 
 namespace Puli\Extension\Symfony\Config;
 
-use Puli\Repository\Filesystem\Resource\LocalResourceInterface;
+use Puli\Repository\Filesystem\Resource\LocalResource;
 use Puli\Repository\ResourceNotFoundException;
-use Puli\Repository\ResourceRepositoryInterface;
+use Puli\Repository\ResourceRepository;
 
 /**
  * @since  1.0
@@ -22,11 +22,11 @@ use Puli\Repository\ResourceRepositoryInterface;
 class PuliFileLocator implements ChainableFileLocatorInterface
 {
     /**
-     * @var ResourceRepositoryInterface
+     * @var ResourceRepository
      */
     private $repo;
 
-    public function __construct(ResourceRepositoryInterface $repo)
+    public function __construct(ResourceRepository $repo)
     {
         $this->repo = $repo;
     }
@@ -68,7 +68,7 @@ class PuliFileLocator implements ChainableFileLocatorInterface
         try {
             $resource = $this->repo->get($path);
 
-            if (!$resource instanceof LocalResourceInterface) {
+            if (!$resource instanceof LocalResource) {
                 throw new \InvalidArgumentException(sprintf(
                     'The file "%s" is not a local file.',
                     $path

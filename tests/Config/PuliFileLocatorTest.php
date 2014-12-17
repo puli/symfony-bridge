@@ -12,7 +12,7 @@
 namespace Puli\Tests\Extension\Symfony\Config;
 
 use Puli\Extension\Symfony\Config\PuliFileLocator;
-use Puli\Repository\ResourceRepository;
+use Puli\Repository\InMemoryRepository;
 use Puli\Repository\Tests\Resource\TestFile;
 
 /**
@@ -22,7 +22,7 @@ use Puli\Repository\Tests\Resource\TestFile;
 class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var ResourceRepository
+     * @var InMemoryRepository
      */
     private $repo;
 
@@ -33,7 +33,7 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->repo = new ResourceRepository();
+        $this->repo = new InMemoryRepository();
         $this->locator = new PuliFileLocator($this->repo);
     }
 
