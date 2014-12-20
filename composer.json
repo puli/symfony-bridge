@@ -1,6 +1,7 @@
 {
     "name": "puli/symfony-bridge",
     "description": "Integrates the Puli library with the Symfony components.",
+    "homepage": "http://puli.io",
     "license": "MIT",
     "authors": [
         {
