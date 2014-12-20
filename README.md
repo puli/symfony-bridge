@@ -59,8 +59,8 @@ All contents of this package are licensed under the [MIT license].
 [The Community Contributors]: https://github.com/puli/symfony-bridge/graphs/contributors
 [Symfony Config component]: http://symfony.com/doc/current/components/config/introduction.html
 [Puli]: https://github.com/puli/puli
-[Locating Config Files with Puli]: http://puli.readthedocs.org/en/latest/extensions/symfony-config.html
-[Puli at a Glance]: http://puli.readthedocs.org/en/latest/at-a-glance.html
+[Locating Config Files with Puli]: http://docs.puli.io/en/latest/extensions/symfony-config.html
+[Puli at a Glance]: http://docs.puli.io/en/latest/at-a-glance.html
 [issue tracker]: https://github.com/puli/puli/issues
 [Git repository]: https://github.com/puli/symfony-bridge
 [@webmozart]: https://twitter.com/webmozart
