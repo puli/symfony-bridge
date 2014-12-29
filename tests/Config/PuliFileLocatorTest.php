@@ -74,20 +74,14 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
         $this->locator->locate('routing.yml', __DIR__.'/Fixtures/main');
     }
 
-    public function testReturnAllPathsIfFirstIsFalse()
+    public function testReturnLastPathIfFirstIsFalse()
     {
-        $mainPath = __DIR__.'/Fixtures/main/routing.yml';
         $overriddenPath = __DIR__.'/Fixtures/override/routing.yml';
 
         $this->repo->add('/webmozart/puli', __DIR__.'/Fixtures/main');
         $this->repo->add('/webmozart/puli', __DIR__.'/Fixtures/override');
 
-        $order = array(
-            $overriddenPath,
-            $mainPath
-        );
-
-        $this->assertSame($order, $this->locator->locate('/webmozart/puli/routing.yml', null, false));
+        $this->assertSame(array($overriddenPath), $this->locator->locate('/webmozart/puli/routing.yml', null, false));
     }
 
     /**
