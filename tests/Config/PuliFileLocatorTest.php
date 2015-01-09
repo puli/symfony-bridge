@@ -13,6 +13,7 @@ namespace Puli\Tests\Extension\Symfony\Config;
 
 use Puli\Extension\Symfony\Config\PuliFileLocator;
 use Puli\Repository\InMemoryRepository;
+use Puli\Repository\Resource\DirectoryResource;
 use Puli\Repository\Tests\Resource\TestFile;
 
 /**
@@ -56,7 +57,7 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
     {
         $path = __DIR__.'/Fixtures/main/routing.yml';
 
-        $this->repo->add('/webmozart/puli', __DIR__.'/Fixtures/main');
+        $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
 
         $this->assertSame($path, $this->locator->locate('/webmozart/puli/routing.yml'));
     }
@@ -78,8 +79,8 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
     {
         $overriddenPath = __DIR__.'/Fixtures/override/routing.yml';
 
-        $this->repo->add('/webmozart/puli', __DIR__.'/Fixtures/main');
-        $this->repo->add('/webmozart/puli', __DIR__.'/Fixtures/override');
+        $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
+        $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/override'));
 
         $this->assertSame(array($overriddenPath), $this->locator->locate('/webmozart/puli/routing.yml', null, false));
     }
