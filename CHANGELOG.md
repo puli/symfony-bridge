@@ -1,7 +1,7 @@
 Changelog
 =========
 
-* 1.0.0-alpha2 (@release_date@)
+* 1.0.0-beta (2015-01-12)
 
  * Renamed `ChainableFileLocator` to `ChainableFileLocatorImpl`
  * Renamed `ChainableFileLocatorInterface` to `ChainableFileLocator`
