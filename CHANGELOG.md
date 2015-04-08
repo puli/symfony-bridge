@@ -1,6 +1,10 @@
 Changelog
 =========
 
+* 1.0.0-next (@release_date@)
+
+ * Moved code to `Puli\SymfonyBridge` namespace
+
 * 1.0.0-beta (2015-01-12)
 
  * Renamed `ChainableFileLocator` to `ChainableFileLocatorImpl`

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Puli package.
+ * This file is part of the puli/symfony-bridge package.
  *
  * (c) Bernhard Schussek <bschussek@gmail.com>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Puli\Tests\Extension\Symfony\Config;
+namespace Puli\SymfonyBridge\Tests\Config;
 
-use Puli\Extension\Symfony\Config\FileLocatorChain;
+use Puli\SymfonyBridge\Config\FileLocatorChain;
 
 /**
  * @since  1.0
@@ -36,8 +36,8 @@ class FileLocatorChainTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->locator1 = $this->getMock('Puli\Extension\Symfony\Config\ChainableFileLocator');
-        $this->locator2 = $this->getMock('Puli\Extension\Symfony\Config\ChainableFileLocator');
+        $this->locator1 = $this->getMock('Puli\SymfonyBridge\Config\ChainableFileLocator');
+        $this->locator2 = $this->getMock('Puli\SymfonyBridge\Config\ChainableFileLocator');
         $this->chain = new FileLocatorChain(array($this->locator1));
         $this->chain->addLocator($this->locator2);
     }

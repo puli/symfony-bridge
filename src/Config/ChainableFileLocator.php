@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Puli package.
+ * This file is part of the puli/symfony-bridge package.
  *
  * (c) Bernhard Schussek <bschussek@gmail.com>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Puli\Extension\Symfony\Config;
+namespace Puli\SymfonyBridge\Config;
 
 use Symfony\Component\Config\FileLocatorInterface;
 

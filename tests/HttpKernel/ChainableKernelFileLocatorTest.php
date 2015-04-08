@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Puli package.
+ * This file is part of the puli/symfony-bridge package.
  *
  * (c) Bernhard Schussek <bschussek@gmail.com>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Puli\Tests\Extension\Symfony\HttpKernel;
+namespace Puli\SymfonyBridge\Tests\HttpKernel;
 
-use Puli\Extension\Symfony\HttpKernel\ChainableKernelFileLocator;
+use Puli\SymfonyBridge\HttpKernel\ChainableKernelFileLocator;
 
 /**
  * @since  1.0

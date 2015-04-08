@@ -18,12 +18,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Puli\\Extension\\Symfony\\": "src/"
+            "Puli\\SymfonyBridge\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Puli\\Extension\\Symfony\\Tests\\": "tests/",
+            "Puli\\SymfonyBridge\\Tests\\": "tests/",
             "Puli\\Repository\\Tests\\": "vendor/puli/repository/tests/"
         }
     },
