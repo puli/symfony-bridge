@@ -15,7 +15,7 @@
         "symfony/config": "~2.3",
         "symfony/http-kernel": "~2.3"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "autoload": {
         "psr-4": {
             "Puli\\SymfonyBridge\\": "src/"
