@@ -8,7 +8,7 @@ Puli Bridge for the Symfony Components
 [![Total Downloads](https://poser.pugx.org/puli/symfony-bridge/downloads.png)](https://packagist.org/packages/puli/symfony-bridge)
 [![Dependency Status](https://www.versioneye.com/php/puli:symfony-bridge/1.0.0/badge.png)](https://www.versioneye.com/php/puli:symfony-bridge/1.0.0)
 
-Latest release: [1.0.0-beta](https://packagist.org/packages/puli/symfony-bridge#1.0.0-beta)
+Latest release: [1.0.0-beta2](https://packagist.org/packages/puli/symfony-bridge#1.0.0-beta2)
 
 PHP >= 5.3.9
 
