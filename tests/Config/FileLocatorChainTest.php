@@ -15,6 +15,7 @@ use Puli\SymfonyBridge\Config\FileLocatorChain;
 
 /**
  * @since  1.0
+ *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class FileLocatorChainTest extends \PHPUnit_Framework_TestCase

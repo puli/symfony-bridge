@@ -16,6 +16,7 @@ use Symfony\Component\HttpKernel\Config\FileLocator;
 
 /**
  * @since  1.0
+ *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class ChainableKernelFileLocator extends FileLocator implements ChainableFileLocator

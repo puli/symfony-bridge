@@ -15,6 +15,7 @@ use Puli\SymfonyBridge\HttpKernel\ChainableKernelFileLocator;
 
 /**
  * @since  1.0
+ *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class ChainableKernelFileLocatorTest extends \PHPUnit_Framework_TestCase

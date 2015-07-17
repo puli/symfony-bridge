@@ -11,13 +11,14 @@
 
 namespace Puli\SymfonyBridge\Tests\Config;
 
-use Puli\SymfonyBridge\Config\PuliFileLocator;
 use Puli\Repository\InMemoryRepository;
 use Puli\Repository\Resource\DirectoryResource;
 use Puli\Repository\Tests\Resource\TestFile;
+use Puli\SymfonyBridge\Config\PuliFileLocator;
 
 /**
  * @since  1.0
+ *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase

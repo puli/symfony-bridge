@@ -16,6 +16,7 @@ use Symfony\Component\Config\FileLocatorInterface;
 
 /**
  * @since  1.0
+ *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class FileLocatorChain implements FileLocatorInterface

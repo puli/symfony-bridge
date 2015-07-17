@@ -19,6 +19,7 @@ use RuntimeException;
 
 /**
  * @since  1.0
+ *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class PuliFileLocator implements ChainableFileLocator
@@ -41,10 +42,10 @@ class PuliFileLocator implements ChainableFileLocator
     /**
      * Returns a full path for a given Puli path.
      *
-     * @param mixed   $path The Puli path to locate
-     * @param string  $currentPath    The current path
-     * @param boolean $first          Whether to return the first occurrence or
-     *                                an array of file names
+     * @param mixed  $path        The Puli path to locate
+     * @param string $currentPath The current path
+     * @param bool   $first       Whether to return the first occurrence or
+     *                            an array of file names
      *
      * @return string|array The full path to the file|An array of file paths
      *
