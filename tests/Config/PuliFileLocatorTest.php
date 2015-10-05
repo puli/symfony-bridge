@@ -90,7 +90,7 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
 
     public function testReturnLastPathIfFirstIsFalse()
     {
-        $overriddenPath = __DIR__.'/Fixtures/override/routing.yml';
+        $overriddenPath = Path::normalize(__DIR__).'/Fixtures/override/routing.yml';
 
         $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
         $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/override'));
