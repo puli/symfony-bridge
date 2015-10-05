@@ -15,6 +15,7 @@ use InvalidArgumentException;
 use Puli\Repository\Api\Resource\FilesystemResource;
 use Puli\Repository\Api\ResourceNotFoundException;
 use Puli\Repository\Api\ResourceRepository;
+use Puli\Repository\Resource\LinkResource;
 use RuntimeException;
 
 /**
@@ -70,6 +71,10 @@ class PuliFileLocator implements ChainableFileLocator
 
         try {
             $resource = $this->repo->get($path);
+
+            while ($resource instanceof LinkResource) {
+                $resource = $this->repo->get($resource->getTargetPath());
+            }
 
             if (!$resource instanceof FilesystemResource) {
                 throw new InvalidArgumentException(sprintf(

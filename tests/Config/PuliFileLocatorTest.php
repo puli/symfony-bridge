@@ -13,6 +13,7 @@ namespace Puli\SymfonyBridge\Tests\Config;
 
 use Puli\Repository\InMemoryRepository;
 use Puli\Repository\Resource\DirectoryResource;
+use Puli\Repository\Resource\LinkResource;
 use Puli\Repository\Tests\Resource\TestFile;
 use Puli\SymfonyBridge\Config\PuliFileLocator;
 
@@ -61,6 +62,16 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
         $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
 
         $this->assertSame($path, $this->locator->locate('/webmozart/puli/routing.yml'));
+    }
+
+    public function testAcceptLinks()
+    {
+        $path = __DIR__.'/Fixtures/main/routing.yml';
+
+        $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
+        $this->repo->add('/routing.yml', new LinkResource('/webmozart/puli/routing.yml'));
+
+        $this->assertSame($path, $this->locator->locate('/routing.yml'));
     }
 
     /**
