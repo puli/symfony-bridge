@@ -16,6 +16,7 @@ use Puli\Repository\Resource\DirectoryResource;
 use Puli\Repository\Resource\LinkResource;
 use Puli\Repository\Tests\Resource\TestFile;
 use Puli\SymfonyBridge\Config\PuliFileLocator;
+use Webmozart\PathUtil\Path;
 
 /**
  * @since  1.0
@@ -50,14 +51,14 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
 
     public function testAcceptAbsolutePaths()
     {
-        $path = __DIR__.'/Fixtures/main/routing.yml';
+        $path = Path::normalize(__DIR__).'/Fixtures/main/routing.yml';
 
         $this->assertSame($path, $this->locator->locate($path));
     }
 
     public function testAcceptKnownPaths()
     {
-        $path = __DIR__.'/Fixtures/main/routing.yml';
+        $path = Path::normalize(__DIR__).'/Fixtures/main/routing.yml';
 
         $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
 
@@ -66,7 +67,7 @@ class PuliFileLocatorTest extends \PHPUnit_Framework_TestCase
 
     public function testAcceptLinks()
     {
-        $path = __DIR__.'/Fixtures/main/routing.yml';
+        $path = Path::normalize(__DIR__).'/Fixtures/main/routing.yml';
 
         $this->repo->add('/webmozart/puli', new DirectoryResource(__DIR__.'/Fixtures/main'));
         $this->repo->add('/routing.yml', new LinkResource('/webmozart/puli/routing.yml'));
