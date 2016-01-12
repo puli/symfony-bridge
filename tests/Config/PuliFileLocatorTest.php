@@ -14,8 +14,8 @@ namespace Puli\SymfonyBridge\Tests\Config;
 use Puli\Repository\InMemoryRepository;
 use Puli\Repository\Resource\DirectoryResource;
 use Puli\Repository\Resource\LinkResource;
-use Puli\Repository\Tests\Resource\TestFile;
 use Puli\SymfonyBridge\Config\PuliFileLocator;
+use Puli\SymfonyBridge\Tests\Config\Fixtures\TestFile;
 use Webmozart\PathUtil\Path;
 
 /**
