@@ -27,8 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Puli\\SymfonyBridge\\Tests\\": "tests/",
-            "Puli\\Repository\\Tests\\": "vendor/puli/repository/tests/"
+            "Puli\\SymfonyBridge\\Tests\\": "tests/"
         }
     },
     "extra": {
