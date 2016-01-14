@@ -1,9 +1,9 @@
 Puli Bridge for the Symfony Components
 ======================================
 
-[![Build Status](https://travis-ci.org/puli/symfony-bridge.png?branch=master)](https://travis-ci.org/puli/symfony-bridge)
+[![Build Status](https://travis-ci.org/puli/symfony-bridge.png?branch=1.0.0-beta4)](https://travis-ci.org/puli/symfony-bridge)
 [![Build status](https://ci.appveyor.com/api/projects/status/3ldji4vsb0e82oqa/branch/master?svg=true)](https://ci.appveyor.com/project/webmozart/symfony-bridge/branch/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/puli/symfony-bridge/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/puli/symfony-bridge/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/puli/symfony-bridge/badges/quality-score.png?b=1.0.0-beta4)](https://scrutinizer-ci.com/g/puli/symfony-bridge/?branch=1.0.0-beta4)
 [![Latest Stable Version](https://poser.pugx.org/puli/symfony-bridge/v/stable.png)](https://packagist.org/packages/puli/symfony-bridge)
 [![Total Downloads](https://poser.pugx.org/puli/symfony-bridge/downloads.png)](https://packagist.org/packages/puli/symfony-bridge)
 [![Dependency Status](https://www.versioneye.com/php/puli:symfony-bridge/1.0.0/badge.png)](https://www.versioneye.com/php/puli:symfony-bridge/1.0.0)
