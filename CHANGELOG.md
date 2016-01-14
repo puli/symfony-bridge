@@ -1,6 +1,10 @@
 Changelog
 =========
 
+* 1.0-0-beta4 (2016-01-14)
+
+ * made compatible with Symfony 3.0
+
 * 1.0.0-beta3 (2015-10-05)
 
  * added support for `LinkResource`
